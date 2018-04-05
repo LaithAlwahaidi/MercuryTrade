@@ -52,6 +52,7 @@ public class TradeOutMessagesInterceptor extends MessageInterceptor {
         public boolean isSuitableFor(String message) {
             return message.contains("Hi, I would like") ||
                     message.contains("Hi, I'd like") ||
+                    message.contains("I'd like") ||
                     (message.contains("wtb") && message.contains("(stash"));
         }
 
